@@ -1,5 +1,8 @@
 name: Build and Release
 
+permissions:
+  contents: write  # Это дает право создавать теги и релизы
+
 on:
   push:
     tags:
