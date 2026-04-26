@@ -113,6 +113,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: "*.ipk"
+          tag_name: ${{ github.ref_name }} # Берет имя тега из события запуска
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
